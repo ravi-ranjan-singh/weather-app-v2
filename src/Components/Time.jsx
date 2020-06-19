@@ -26,10 +26,12 @@ const Time = (props) => {
       <div className="row time mt-5">
         <p className="col-lg-12">
           <span className="sunrise mr-5">
-            <ion-icon name="sunny"></ion-icon> {isNaN(riseTime) ? '' : riseTime}
+            <ion-icon name="sunny"></ion-icon>{' '}
+            {isNaN(parseInt(riseTime)) ? '' : riseTime}
           </span>
           <span className="sunset ml-5">
-            <ion-icon name="moon"></ion-icon> {isNaN(setTime) ? '' : setTime}
+            <ion-icon name="moon"></ion-icon>{' '}
+            {isNaN(parseInt(setTime)) ? '' : setTime}
           </span>
         </p>
       </div>
