@@ -27,7 +27,7 @@ const Main = (props) => {
           humidity={props.weather.humidity}
           unit={props.unit}
         />
-        <Time rise={props.rise || ''} set={props.set || ''} />
+        <Time rise={props.rise} set={props.set} />
       </div>
     </React.Fragment>
   );
